@@ -23,3 +23,7 @@ Node & React:	✅ 최신 React + Vite + TypeScript
 번역 엔진:	OpenAI GPT (gpt-4o-mini)
 개발 방식:	GitHub Codespaces
 Docker:	추후 요청 시 추가 예정
+포트: 8000
+API Key 관리: .env ok
+라이선스: MIT
+패키지: pnpm
