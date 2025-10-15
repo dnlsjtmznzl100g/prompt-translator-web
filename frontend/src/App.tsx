@@ -1,5 +1,3 @@
-frontend/src/App.tsx
-
 import React from "react";
 import TranslateForm from "./components/TranslateForm";
 
