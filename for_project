@@ -9,10 +9,33 @@
 구조:	backend + frontend 폴더 분리
 
 <프로젝트 기본 구조>
-prompt-translator-web
- ├─ backend     → FastAPI 서버
- ├─ frontend    → React + Vite 클라이언트
- └─ README.md
+prompt-translator-web/
+├─ backend/                   # FastAPI 서버
+│  ├─ app/
+│  │  ├─ main.py              # FastAPI 앱 진입점
+│  │  ├─ routes/
+│  │  │  └─ translate.py      # 번역 API 라우터
+│  │  ├─ services/
+│  │  │  └─ openai_service.py # OpenAI GPT 호출 로직
+│  │  └─ config.py            # 환경변수 로드 등 설정
+│  ├─ requirements.txt        # Python 패키지 목록
+│  └─ .env                    # API 키 및 환경변수
+│
+├─ frontend/                  # React + Vite 클라이언트
+│  ├─ src/
+│  │  ├─ App.tsx              # 메인 앱 컴포넌트
+│  │  ├─ main.tsx             # React 진입점
+│  │  ├─ components/
+│  │  │  ├─ TranslateForm.tsx # 입력 폼
+│  │  │  └─ TranslationResult.tsx # 번역 결과
+│  │  ├─ api/
+│  │  │  └─ translateApi.ts   # backend 호출 함수
+│  │  └─ styles.css           # 간단 스타일
+│  ├─ index.html
+│  ├─ package.json
+│  └─ tsconfig.json
+│
+└─ README.md
 
 
 <확정 개발 환경>
