@@ -1,0 +1,25 @@
+우리가 지금 하려는 프로젝트는 번역 프로그램 웹 만들기야.
+
+<프로젝트 최종 설정>
+개발 플랜:	A 모드 (빠른 MVP 개발)
+앱 구조:	FastAPI + React (W3)
+번역 품질 옵션:	✅ UI에서 커스텀 선택 가능
+체크포인트 로직:	✅ 자동 문장 보완
+출력 방식:	영어 번역 4단계
+구조:	backend + frontend 폴더 분리
+
+<프로젝트 기본 구조>
+prompt-translator-web
+ ├─ backend     → FastAPI 서버
+ ├─ frontend    → React + Vite 클라이언트
+ └─ README.md
+
+
+<확정 개발 환경>
+Python 버전:	✅ Codespaces 기본 Python 유지 (3.11~3.12 예상)
+Node & React:	✅ 최신 React + Vite + TypeScript
+백엔드:	FastAPI
+프론트엔드:	React Web UI
+번역 엔진:	OpenAI GPT (gpt-4o-mini)
+개발 방식:	GitHub Codespaces
+Docker:	추후 요청 시 추가 예정
